@@ -9,11 +9,7 @@ execute as @a if entity @s[gamemode=survival,predicate=arlyparty:lighthouse_venu
 execute as @a if entity @s[gamemode=survival,predicate=arlyparty:lighthouse_venus] run gamemode adventure @s
 
 # Remove tnt/explosive entities from overworld spawn
-kill @e[type=minecraft:tnt,predicate=arlyparty:lighthouse_jupiter]
-kill @e[type=minecraft:tnt_minecart,predicate=arlyparty:lighthouse_jupiter]
-kill @e[type=minecraft:tnt,predicate=arlyparty:lighthouse_mars,predicate=!arlyparty:lighthouse_mars_inner]
-kill @e[type=minecraft:tnt_minecart,predicate=arlyparty:lighthouse_mars,predicate=!arlyparty:lighthouse_mars_inner]
-kill @e[type=minecraft:tnt,predicate=arlyparty:lighthouse_mercury]
-kill @e[type=minecraft:tnt_minecart,predicate=arlyparty:lighthouse_mercury]
-kill @e[type=minecraft:tnt,predicate=arlyparty:lighthouse_venus]
-kill @e[type=minecraft:tnt_minecart,predicate=arlyparty:lighthouse_venus]
+kill @e[type=#arlyparty:explosive,predicate=arlyparty:lighthouse_jupiter]
+kill @e[type=#arlyparty:explosive,predicate=arlyparty:lighthouse_mars,predicate=!arlyparty:lighthouse_mars_inner]
+kill @e[type=#arlyparty:explosive,predicate=arlyparty:lighthouse_mercury]
+kill @e[type=#arlyparty:explosive,predicate=arlyparty:lighthouse_venus]
