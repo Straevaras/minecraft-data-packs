@@ -13,3 +13,9 @@ kill @e[type=#arlyparty:explosive,predicate=arlyparty:lighthouse_jupiter]
 kill @e[type=#arlyparty:explosive,predicate=arlyparty:lighthouse_mars,predicate=!arlyparty:lighthouse_mars_inner]
 kill @e[type=#arlyparty:explosive,predicate=arlyparty:lighthouse_mercury]
 kill @e[type=#arlyparty:explosive,predicate=arlyparty:lighthouse_venus]
+
+# Remove specific mobs from towers
+tp @e[type=#arlyparty:enemies_tower,predicate=arlyparty:lighthouse_jupiter] 0 -64 0
+tp @e[type=#arlyparty:enemies_tower,predicate=arlyparty:lighthouse_mars] 0 -64 0
+tp @e[type=#arlyparty:enemies_tower,predicate=arlyparty:lighthouse_mercury] 0 -64 0
+tp @e[type=#arlyparty:enemies_tower,predicate=arlyparty:lighthouse_jupiter] 0 -64 0
