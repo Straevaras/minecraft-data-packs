@@ -6,6 +6,6 @@ execute as @a if entity @s[gamemode=survival,predicate=arlyparty:spawn_overworld
 kill @e[type=#arlyparty:explosive,predicate=arlyparty:spawn_overworld]
 
 # Remove hostile mobs (and some of their entities) that have entered the overworld spawn area
-tp @e[type=#arlyparty:enemies,predicate=arlyparty:spawn_overworld] 0 -64 0
+tp @e[type=#arlyparty:enemies,predicate=arlyparty:spawn_overworld] 0 -128 0
 
 
