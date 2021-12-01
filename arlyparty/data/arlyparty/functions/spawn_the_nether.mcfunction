@@ -2,6 +2,10 @@
 execute as @a if entity @s[gamemode=survival,predicate=arlyparty:spawn_the_nether] run tellraw @s {"text":"Your game mode has been updated to Adventure Mode"}
 execute as @a if entity @s[gamemode=survival,predicate=arlyparty:spawn_the_nether] run gamemode adventure @s
 
+# Detect when a player goes on the nether roof
+execute as @a if entity @s[gamemode=survival,predicate=arlyparty:nether_ceiling] run tellraw @s {"text":"Your game mode has been updated to Adventure Mode"}
+execute as @a if entity @s[gamemode=survival,predicate=arlyparty:nether_ceiling] run gamemode adventure @s
+
 # Remove tnt/explosive entities from the nether spawn
 kill @e[type=#arlyparty:explosive,predicate=arlyparty:spawn_the_nether]
 
